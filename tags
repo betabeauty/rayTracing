@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	makefile	/^CC=g++$/;"	m
+FLAGS	makefile	/^FLAGS = -g -D _DEBUG -I..\/..\/include -I\/usr\/local\/include -L..\/..\/lib -L\/usr\/local\/lib \/usr\/local\/lib\/liblog4cplus.a -lnetbase -levent -lrt -llua -ldl -Wall$/;"	m
+INFINITY	back_main.cpp	16;"	d	file:
+INFINITY	main.cpp	16;"	d	file:
+MAX_RAY_DEPTH	back_main.cpp	20;"	d	file:
+MAX_RAY_DEPTH	main.cpp	20;"	d	file:
+MAX_RAY_DEPTH	rayTracer.h	5;"	d
+M_PI	back_main.cpp	15;"	d	file:
+M_PI	main.cpp	15;"	d	file:
+OBJ	makefile	/^OBJ=$(addprefix .\/, $(addsuffix .o, $(basename $(SRC))))$/;"	m
+RayTracer	rayTracer.cpp	/^RayTracer::RayTracer(unsigned w, unsigned h){$/;"	f	class:RayTracer
+RayTracer	rayTracer.h	/^class RayTracer{$/;"	c
+SRC	makefile	/^SRC=$(wildcard *.cpp)$/;"	m
+Scene	scene.h	/^    Scene(){}$/;"	f	class:Scene
+Scene	scene.h	/^class Scene{$/;"	c
+Sphere	sphere.h	/^    Sphere( $/;"	f	class:Sphere
+Sphere	sphere.h	/^class Sphere : public Scene$/;"	c
+TARGET	makefile	/^TARGET=main$/;"	m
+Vec3	vec3.h	/^    Vec3() : x(T(0)), y(T(0)), z(T(0)) {} $/;"	f	class:Vec3
+Vec3	vec3.h	/^    Vec3(T xx) : x(xx), y(xx), z(xx) {} $/;"	f	class:Vec3
+Vec3	vec3.h	/^    Vec3(T xx, T yy, T zz) : x(xx), y(yy), z(zz) {} $/;"	f	class:Vec3
+Vec3	vec3.h	/^class Vec3 $/;"	c
+Vec3f	vec3.h	/^typedef Vec3<float> Vec3f; $/;"	t
+_RAYTRACER_	rayTracer.h	2;"	d
+_SCENE_	scene.h	2;"	d
+_SPHERE_	sphere.h	2;"	d
+_VEC3_	vec3.h	2;"	d
+angle	rayTracer.h	/^    float angle, aspectratio;$/;"	m	class:RayTracer
+aspectratio	rayTracer.h	/^    float angle, aspectratio;$/;"	m	class:RayTracer
+center	sphere.h	/^    Vec3f center;                      \/\/\/ position of the sphere $/;"	m	class:Sphere
+dot	vec3.cpp	/^T Vec3<T>::dot(const Vec3<T> &v) const { $/;"	f	class:Vec3
+emissionColor	sphere.h	/^    Vec3f surfaceColor, emissionColor; \/\/\/ surface color and emission (light) $/;"	m	class:Sphere
+height	rayTracer.h	/^    unsigned width, height;$/;"	m	class:RayTracer
+image	rayTracer.h	/^    Vec3f *image, *pixel;$/;"	m	class:RayTracer
+intersect	scene.h	/^    virtual bool intersect(const Vec3f &rayorig, const Vec3f &raydir, float &t0, float &t1) const{}$/;"	f	class:Scene
+intersect	sphere.cpp	/^bool Sphere::intersect(const Vec3f &rayorig, const Vec3f &raydir, float &t0, float &t1) const $/;"	f	class:Sphere
+invHeight	rayTracer.h	/^    float invWidth, invHeight;$/;"	m	class:RayTracer
+invWidth	rayTracer.h	/^    float invWidth, invHeight;$/;"	m	class:RayTracer
+length	vec3.cpp	/^T Vec3<T>::length() const { $/;"	f	class:Vec3
+length2	vec3.cpp	/^T Vec3<T>::length2() const { $/;"	f	class:Vec3
+loadObjs	rayTracer.cpp	/^void RayTracer::loadObjs(){$/;"	f	class:RayTracer
+main	back_main.cpp	/^int main(int argc, char **argv) $/;"	f
+main	main.cpp	/^int main(int argc, char **argv) $/;"	f
+mix	back_main.cpp	/^float mix(const float &a, const float &b, const float &mix) $/;"	f
+mix	main.cpp	/^float mix(const float &a, const float &b, const float &mix) $/;"	f
+mix	rayTracer.h	/^    float mix(const float &a, const float &b, const float &mix) $/;"	f	class:RayTracer
+normalize	vec3.cpp	/^Vec3<T>& Vec3<T>::normalize() $/;"	f	class:Vec3
+operator *	vec3.cpp	/^Vec3<T> Vec3<T>::operator * (const Vec3<T> &v) const { $/;"	f	class:Vec3
+operator *	vec3.cpp	/^Vec3<T> Vec3<T>::operator* (const T &f) const { $/;"	f	class:Vec3
+operator *=	vec3.cpp	/^Vec3<T>& Vec3<T>::operator *= (const Vec3<T> &v) { $/;"	f	class:Vec3
+operator +	vec3.cpp	/^Vec3<T> Vec3<T>::operator + (const Vec3<T> &v) const { $/;"	f	class:Vec3
+operator +=	vec3.cpp	/^Vec3<T>& Vec3<T>::operator += (const Vec3<T> &v) { $/;"	f	class:Vec3
+operator -	vec3.cpp	/^Vec3<T> Vec3<T>::operator - () const { $/;"	f	class:Vec3
+operator -	vec3.cpp	/^Vec3<T> Vec3<T>::operator - (const Vec3<T> &v) const { $/;"	f	class:Vec3
+operator <<	vec3.cpp	/^std::ostream& Vec3<T>::operator << (std::ostream &os) $/;"	f	class:Vec3
+pixel	rayTracer.h	/^    Vec3f *image, *pixel;$/;"	m	class:RayTracer
+radius	sphere.h	/^    float radius, radius2;             \/\/\/ sphere radius and radius^2 $/;"	m	class:Sphere
+radius2	sphere.h	/^    float radius, radius2;             \/\/\/ sphere radius and radius^2 $/;"	m	class:Sphere
+reflection	sphere.h	/^    float transparency, reflection;    \/\/\/ surface transparency and reflectivity $/;"	m	class:Sphere
+render	back_main.cpp	/^void render(const std::vector<Sphere> &spheres) $/;"	f
+render	main.cpp	/^void render(const std::vector<Sphere> &spheres) $/;"	f
+render	rayTracer.cpp	/^void RayTracer::render(){$/;"	f	class:RayTracer
+run	rayTracer.cpp	/^void RayTracer::run(){$/;"	f	class:RayTracer
+saveToFile	rayTracer.cpp	/^void RayTracer::saveToFile(){$/;"	f	class:RayTracer
+scenes	rayTracer.h	/^    vector<Scene> scenes;$/;"	m	class:RayTracer
+surfaceColor	sphere.h	/^    Vec3f surfaceColor, emissionColor; \/\/\/ surface color and emission (light) $/;"	m	class:Sphere
+trace	back_main.cpp	/^Vec3f trace( const Vec3f &rayorig, const Vec3f &raydir, $/;"	f
+trace	main.cpp	/^Vec3f trace( const Vec3f &rayorig, const Vec3f &raydir, $/;"	f
+trace	rayTracer.cpp	/^Vec3f RayTracer::trace( const Vec3f &rayorig, const Vec3f &raydir, const int &depth) $/;"	f	class:RayTracer
+transparency	sphere.h	/^    float transparency, reflection;    \/\/\/ surface transparency and reflectivity $/;"	m	class:Sphere
+width	rayTracer.h	/^    unsigned width, height;$/;"	m	class:RayTracer
+x	vec3.h	/^    T x, y, z; $/;"	m	class:Vec3
+y	vec3.h	/^    T x, y, z; $/;"	m	class:Vec3
+z	vec3.h	/^    T x, y, z; $/;"	m	class:Vec3
+~RayTracer	rayTracer.cpp	/^RayTracer::~RayTracer(){$/;"	f	class:RayTracer
